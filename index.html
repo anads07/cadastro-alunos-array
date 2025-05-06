@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/floresquerda.png" alt="Flor esquerda" class="flor-esquerda">
+            <h1>Cadastro de alunos</h1>
+            <img src="img/flordireita.png" alt="Flor direita" class="flor-direita">
+        </header>
+
+        <div class="cadastro-form">
+            <h2>Cadastre um novo aluno:</h2>
+            <form id="alunoForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" required>
+                </div>
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" required>
+                </div>
+                <button type="submit" class="btn-salvar">Salvar aluno</button>
+            </form>
+        </div>
+
+        <div class="alunos-cadastrados">
+            <h2>Alunos cadastrados:</h2>
+            <div class="json-container" id="jsonContainer">
+            </div>
+            <button class="btn-exportar" id="btnExportar">Exportar JSON</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
